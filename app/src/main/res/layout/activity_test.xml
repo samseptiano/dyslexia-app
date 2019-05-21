@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lin_result"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:id="@+id/lin_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#f8ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#999898" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnResult"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Submit Test"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+</RelativeLayout>
